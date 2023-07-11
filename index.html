@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Consumindo API-CEP  com fech </title>
+    <!-- font google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script src="js/cep.js" defer></script>
+</head>
+<body>
+    <header>
+         <h1>Consulta de Endereço</h1>
+    </header>
+     <main>
+
+        <div class="form_container">
+             <form   class="form_cep">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" placeholder="Digite o CEP">
+
+                <label for="logradouro">Logradouro</label>
+                <input type="text" id="logradouro" placeholder="Digite o logradouro">
+
+                <label for="complemento">Complemento</label>
+                <input type="text" id="complemento" placeholder="Digite o complemento">
+
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" placeholder="Digite o bairro">
+
+                <label for="localidade">Cidade</label>
+                <input type="uf" id="localidade" placeholder="Digite a Cidade">
+            
+                <label for="uf">Estado</label>
+                <input type="uf" id="uf" placeholder="Digite o UF">
+
+                <input type="button" id="btn_Buscar"  class="btn btn-primary"  value="Buscar Endereço" onclick="buscar()">
+
+        </form>
+        <footer class="footer">
+            <div class="footer_rede">
+                <div>
+                    <p> Desenvolvido por Mônica Costa © 2023 - Parceria Imã Tech</p>
+                </div>
+                <div id="rede">     
+                    <a href="https://www.linkedin.com/in/monica-costa-5572a929/" target="_blank" ><img src="../FormularioConsumoCEP/img/linkedin.png"></a> 
+                </div>
+            </div>
+           
+        </footer>
+    </div>
+
+</main>
+</body>
+</html>
